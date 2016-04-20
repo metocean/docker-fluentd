@@ -8,6 +8,7 @@ apk upgrade
 apk add build-base ca-certificates ruby ruby-irb ruby-dev
 echo 'gem: --no-document' >> /etc/gemrc
 gem install fluentd -v $FLUENTD_VERSION
+gem install fluent-plugin-elasticsearch
 mkdir -p /etc/fluentd
 mkdir -p /usr/lib/fluentd/plugins
 cp /install/fluentd.conf /etc/fluentd/
